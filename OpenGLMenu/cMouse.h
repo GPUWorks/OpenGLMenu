@@ -6,7 +6,7 @@
 
 #include <vector>
 
-class Mouse
+class MouseHM
 {
 private: 
 	double xpos;

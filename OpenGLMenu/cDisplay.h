@@ -12,7 +12,8 @@ using namespace std;
 class Display
 {
 private:
-	Mouse mouse;
+	const GLint WIDTH = 800, HEIGHT = 600;
+	MouseHM mouse;
 	Display(const Display& other) {}
 	Display & operator=(const Display& other) {}
 
@@ -21,7 +22,8 @@ private:
 	bool LMD; 
 
 public:
-	Display(int width, int height, const std::string& title, Mouse &dmouse );
+
+	Display(unsigned int winWidth, unsigned int winHeight, int vpWinPosx, int vpWinPosy, int vpWidth, int vpHeight, const char * title, MouseHM &dmouse );
 	virtual ~Display();
 
 	void SwapBuffers();
@@ -29,7 +31,7 @@ public:
 	void UpdateMouse(double &x, double &y, int & b);
 
 	//bool IsClosed();
-	const GLint WIDTH = 800, HEIGHT = 600;
+
 
 	bool IsClosed()
 	{

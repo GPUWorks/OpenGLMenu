@@ -5,21 +5,6 @@
 #include <GL\glew.h>
 #include "cVertex.h"
 
-
-//class Vertex
-//{
-//private:
-//	glm::vec3 pos;
-//
-//public:
-//	Vertex(const glm::vec3& pos)
-//	{
-//		this->pos = pos;
-//	}
-//
-//};
-
-
 class Mesh
 {
 private:

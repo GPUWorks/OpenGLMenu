@@ -83,11 +83,11 @@ void Mesh::drawTriangle(Vertex* vertices, unsigned int numVertices)
 void Mesh::Draw()
 {
 	glBindVertexArray(VAO);
-	//glDrawArrays(GL_TRIANGLES, 0, m_drawCount);
+	glDrawArrays(GL_TRIANGLES, 0, m_drawCount);
 	//glDrawArrays(GL_QUADS, 0, m_drawCount);
 
-	glDrawArrays(GL_POLYGON, 0, m_drawCount);
-
+	//glDrawArrays(GL_POLYGON, 0, m_drawCount);
+	
 	glBindVertexArray(0);
 }
 
